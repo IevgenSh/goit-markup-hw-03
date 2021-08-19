@@ -14,6 +14,7 @@
   --primery-white-color: #ffffff;
   --hero-background-color: #2f303a;
   --portfolio-buttons-font-color: #f5f4fa;
+  --header-bg-color: #2f303a;
 }
 
 body {
@@ -43,7 +44,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: solid 2px red;
+}
+
+/* Header */
+.page-header {
+  background-color: var(--primery-white-color);
 }
 
 /* logo */
@@ -99,12 +107,14 @@ body {
 .hero {
   margin-bottom: 94px;
   text-align: center;
+
   background-color: var(--hero-background-color);
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--primery-white-color);
 
   font-weight: 900;
@@ -140,7 +150,9 @@ body {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+
   color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -151,7 +163,9 @@ body {
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
+
   color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -166,14 +180,25 @@ body {
 
 /* Work */
 
-se
-
 /* Team */
 
-.team-list {
+.section.team {
+  margin-bottom: 0;
+}
+
+.section-title.team {
+  padding-top: 79px;
+}
+
+.team-list-card {
+  width: 270px;
+  height: 368px;
 }
 
 .team-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -194,6 +219,7 @@ se
 }
 
 .footer .logo {
+  margin-bottom: 20px;
   color: var(--primery-white-color);
 }
 
@@ -202,6 +228,9 @@ se
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  width: 231px;
+  height: 81px;
 }
 
 .adress .link {
