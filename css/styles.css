@@ -27,7 +27,7 @@ body {
 
 .site-nav,
 .contact-us,
-.features,
+.features-list,
 .work,
 .team-list,
 .projects-nav {
@@ -50,13 +50,27 @@ body {
 }
 
 /* Header */
+
 .page-header {
   background-color: var(--primery-white-color);
+  border-bottom: solid 1px #ececec;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* logo */
 
 .logo {
+  margin-right: 93px;
+
   color: #000000;
 
   font-family: Raleway, sans-serif;
@@ -70,7 +84,20 @@ body {
 }
 
 /* Site-nav */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -89,6 +116,15 @@ body {
 }
 
 /* Contact us */
+.contact-us {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-us .item + .item {
+  margin-left: 50px;
+}
+
 .contact-us .link {
   color: var(--primery-text-color);
 
@@ -105,7 +141,8 @@ body {
 
 /* Hero */
 .hero {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
 
   background-color: var(--hero-background-color);
@@ -144,7 +181,8 @@ body {
 /* Section */
 
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -160,7 +198,21 @@ body {
 }
 
 /* Features */
-.features .title {
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-list .title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -172,22 +224,31 @@ body {
   text-transform: uppercase;
 }
 
-.features .text {
+.features-list .text {
   margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* Work */
 
+.work {
+  padding-top: 0;
+}
+
 /* Team */
 
 .section.team {
-  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-color: var(--portfolio-buttons-font-color);
 }
 
 .section-title.team {
-  padding-top: 79px;
+  padding-top: 94px;
 }
 
 .team-list-card {
@@ -216,6 +277,8 @@ body {
 /* Footer */
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
