@@ -46,7 +46,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  border: solid 2px red;
+  /* border: solid 2px red; */
 }
 
 /* Header */
@@ -168,7 +168,7 @@ body {
   border-color: transparent;
   padding: 10px 32px;
   display: inline-block;
-  min-width: 200px;
+  min-width: 73px;
   text-align: center;
   display: inline-block;
 
@@ -234,15 +234,26 @@ body {
 
 /* Work */
 
-.work {
+.section.work {
   padding-top: 0;
+}
+
+.work .list {
+  display: flex;
+}
+
+.work .list .item {
+  align-items: center;
+}
+
+.work .list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Team */
 
 .section.team {
   padding-top: 0;
-  padding-bottom: 0;
 
   background-color: var(--portfolio-buttons-font-color);
 }
@@ -251,9 +262,19 @@ body {
   padding-top: 94px;
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-list-card {
+  align-items: center;
+
   width: 270px;
   height: 368px;
+}
+
+.team-list-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-list .title {
@@ -269,6 +290,10 @@ body {
 }
 
 .team-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -307,8 +332,21 @@ body {
 
 /* Portfolio.html */
 
+.projects {
+  padding-top: 94px;
+}
+
+.projects-nav {
+  padding-left: ;
+}
+
 .projects-title {
   color: var(--title-text-color);
+}
+
+.projects-nav {
+  display: flex;
+  justify-content: center;
 }
 
 .projects-nav .button {
@@ -328,10 +366,36 @@ body {
 }
 
 .projects-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
+.projects-list-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* border: solid 2px blue; */
+}
+
+.projects-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .projects-list .title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -341,6 +405,12 @@ body {
 }
 
 .projects-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+
   color: var(--primery-text-color);
 
   font-size: 16px;
