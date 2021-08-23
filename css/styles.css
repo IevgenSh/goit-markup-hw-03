@@ -216,6 +216,14 @@ img {
   overflow: hidden;
 }
 
+.features-block {
+  display: flex;
+}
+
+.features-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -360,6 +368,10 @@ img {
   text-align: center;
 }
 
+.projects-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .projects-nav .button:hover,
 .projects-nav .button:focus {
   background-color: var(--accent-color);
@@ -383,6 +395,7 @@ img {
 }
 
 .projects-list-item .border {
+  border-top: 0px;
   border-left: solid 1px rgba(238, 238, 238, 1);
   border-right: solid 1px rgba(238, 238, 238, 1);
   border-bottom: solid 1px rgba(238, 238, 238, 1);
@@ -397,8 +410,9 @@ img {
 }
 
 .projects-list .title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
+  padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
 
