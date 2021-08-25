@@ -147,8 +147,6 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
   text-align: center;
 
   background-color: var(--hero-background-color);
@@ -344,6 +342,14 @@ img {
   display: block;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.adress .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress a:first-child {
+  color: var(--primery-white-color);
 }
 
 .adress .link:hover,
